@@ -1,0 +1,591 @@
+<template>
+    <div class="mainContainer">
+        <div class="triple-quote-heading">Trip Quote #036</div>
+        <div class="container">
+        <div class="segment-container">
+          <div class="segment-header">
+            <div class="segment-heading">
+              <h3>Segment 1</h3>
+              <label for="segment_1_checkbox" class="toggle-btn">
+                <input id="segment_1_checkbox" type="checkbox" />
+                <span class="toggle-btn-label"></span>
+              </label>
+            </div>
+  
+            <div class="segment-date">EWR - LHR 07/03-09/08</div>
+          </div>
+  
+          <div class="segment">
+            <div class="option">
+              <h5>
+                <span>Option 1</span> <br />
+                <span>Leg 1</span>
+              </h5>
+  
+              <div class="option-row">
+                <div class="option-input-group">
+                  <label for="type">Type</label>
+                  <select id="type1">
+                    <option value="Miles" selected>Miles</option>
+                  </select>
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="class">Class</label>
+                  <select id="class1">
+                    <option value="J" selected>J</option>
+                  </select>
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="price">Price</label>
+                  <input type="text" id="price" value="$500" />
+                </div>
+              </div>
+  
+              <div class="option-row">
+                <div class="option-input-group">
+                  <label for="flight_no">Flight #</label>
+                  <input type="text" id="flight_no" value="AA100"/>
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="dep_date">Dep Date</label>
+                  <input type="text" id="dep_date" value="01/05/23" />
+                </div>
+  
+                <button class="option-btn">Find</button>
+              </div>
+  
+              <div class="option-row">
+                <div class="option-input-group">
+                  <label for="airline">Airline</label>
+                  <input disabled type="text" id="airline" placeholder="AMERICAN" />
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="dep_date_time">Dep Date & Time</label>
+                  <input disabled type="text" id="dep_date_time" placeholder="1/5 03:25"/>
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="dep_airport">Dep Airport</label>
+                  <input disabled type="text" id="dep_airport" placeholder="EWR"/>
+                </div>
+              </div>
+  
+              <div class="option-row">
+                <div class="option-input-group">
+                  <label for="arv_date_time">Arv Date & Time</label>
+                  <input disabled type="text" id="arv_date_time" placeholder="1/6 14:25"/>
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="arv_airport">ARV Airport</label>
+                  <input disabled type="text" name="dep_date_time" placeholder="LHR"/>
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="notes">Notes</label>
+                  <textarea type="text" id="notes"></textarea>
+                </div>
+              </div>
+  
+              <div class="option-divider">
+                <h3>
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    version="1.1"
+                    viewBox="0 0 16 16"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3 16h10l1-11h-12zM10 2v-2h-4v2h-5v3l1-1h12l1 1v-3h-5zM9 2h-2v-1h2v1z"
+                    ></path>
+                  </svg>
+                  <span>Leg 2</span>
+                </h3>
+              </div>
+  
+              <div class="option-row">
+                <div class="option-input-group">
+                  <label for="type">Type</label>
+                    <select id="type2">
+                    <option value="Miles" selected>Miles</option>
+                  </select>
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="class">Class</label>
+                  <select id="class2">
+                    <option value="J" selected>J</option>
+                  </select>
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="price">Price</label>
+                  <input type="text" name="price" value="$500"/>
+                </div>
+              </div>
+  
+              <div class="option-row">
+                <div class="option-input-group">
+                  <label for="flight_no">Flight #</label>
+                  <input type="text" name="flight_no" value="AA100"/>
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="dep_date">Dep Date</label>
+                  <input type="text" name="dep_date" value="01/05/23"/>
+                </div>
+  
+                <button class="option-btn">Find</button>
+              </div>
+  
+              <div class="option-row">
+                <div class="option-input-group">
+                  <label for="airline">Airline</label>
+                  <input disabled type="text" name="airline" placeholder="AMERICAN"/>
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="dep_date_time">Dep Date & Time</label>
+                  <input disabled type="text" name="dep_date_time" placeholder="1/5 03:25"/>
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="dep_airport">Dep Airport</label>
+                  <input disabled type="text" name="dep_airport" placeholder="EWR"/>
+                </div>
+              </div>
+  
+              <div class="option-row">
+                <div class="option-input-group">
+                  <label for="arv_date_time">Arv Date & Time</label>
+                  <input disabled type="text" name="arv_date_time" placeholder="1/6 14:25"/>
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="arv_airport">ARV Airport</label>
+                  <input disabled type="text" name="dep_date_time" placeholder="LHR"/>
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="notes">Notes</label>
+                  <textarea type="text" name="notes"></textarea>
+                </div>
+              </div>
+  
+              <div class="option-footer">
+                <button class="option-btn">Add Leg</button>
+  
+                <label for="option_1_checkbox" class="toggle-btn">
+                  <input id="option_1_checkbox" type="checkbox" />
+                  <span class="toggle-btn-label"></span>
+                </label>
+              </div>
+            </div>
+  
+            <div class="add-option">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 448 512"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+  
+        <div class="segment-container">
+          <div class="segment-header">
+            <div class="segment-heading">
+              <h3>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3 16h10l1-11h-12zM10 2v-2h-4v2h-5v3l1-1h12l1 1v-3h-5zM9 2h-2v-1h2v1z"
+                  ></path>
+                </svg>
+                <span>Segment 2</span>
+              </h3>
+  
+              <label for="segment_2_checkbox" class="toggle-btn">
+                <input id="segment_2_checkbox" type="checkbox" />
+                <span class="toggle-btn-label"></span>
+              </label>
+            </div>
+  
+            <div class="segment-date">LHR - MCR 07/05</div>
+          </div>
+  
+          <div class="segment">
+            <div class="option">
+              <h5>
+                <span>Option 1</span> <br />
+                <span>Leg 1</span>
+              </h5>
+  
+              <div class="option-row">
+                <div class="option-input-group">
+                  <label for="type">Type</label>
+                    <select id="type3">
+                    <option value="Miles" selected>Miles</option>
+                  </select>
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="class">Class</label>
+                  <select id="class3">
+                    <option value="J" selected>J</option>
+                  </select>
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="price">Price</label>
+                  <input type="text" name="price" value="$500"/>
+                </div>
+              </div>
+  
+              <div class="option-row">
+                <div class="option-input-group">
+                  <label for="flight_no">Flight #</label>
+                  <input type="text" name="flight_no" value="AA100"/>
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="dep_date">Dep Date</label>
+                  <input type="text" name="dep_date" value="01/05/23"/>
+                </div>
+  
+                <button class="option-btn">Find</button>
+              </div>
+  
+              <div class="option-row">
+                <div class="option-input-group">
+                  <label for="airline">Airline</label>
+                  <input disabled type="text" name="airline" placeholder="AMERICAN"/>
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="dep_date_time">Dep Date & Time</label>
+                  <input disabled type="text" name="dep_date_time" placeholder="1/5 03:25"/>
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="dep_airport">Dep Airport</label>
+                  <input disabled type="text" name="dep_airport" placeholder="EWR"/>
+                </div>
+              </div>
+  
+              <div class="option-row">
+                <div class="option-input-group">
+                  <label for="arv_date_time">Arv Date & Time</label>
+                  <input disabled type="text" name="arv_date_time" placeholder="1/6 14:25"/>
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="arv_airport">ARV Airport</label>
+                  <input disabled type="text" name="dep_date_time" placeholder="LHR"/>
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="notes">Notes</label>
+                  <textarea type="text" name="notes"></textarea>
+                </div>
+              </div>
+  
+              <div class="option-footer">
+                <button class="option-btn">Add Leg</button>
+  
+                <label for="option_2_checkbox" class="toggle-btn">
+                  <input id="option_2_checkbox" type="checkbox" />
+                  <span class="toggle-btn-label"></span>
+                </label>
+              </div>
+            </div>
+  
+            <div class="option">
+              <h5>
+                <span>Option 2</span> <br />
+                <span>Leg 1</span>
+              </h5>
+  
+              <div class="option-row">
+                <div class="option-input-group">
+                  <label for="type">Type</label>
+                    <select id="type4">
+                    <option value="Miles" selected>Miles</option>
+                  </select>
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="class">Class</label>
+                  <select id="class4">
+                    <option value="J" selected>J</option>
+                  </select>
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="price">Price</label>
+                  <input type="text" name="price" value="$500" />
+                </div>
+              </div>
+  
+              <div class="option-row">
+                <div class="option-input-group">
+                  <label for="flight_no">Flight #</label>
+                  <input type="text" name="flight_no" value="AA100"/>
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="dep_date">Dep Date</label>
+                  <input type="text" name="dep_date" value="01/05/23"/>
+                </div>
+  
+                <button class="option-btn">Find</button>
+              </div>
+  
+              <div class="option-row">
+                <div class="option-input-group">
+                  <label for="airline">Airline</label>
+                  <input disabled type="text" name="airline" placeholder="AMERICAN"/>
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="dep_date_time">Dep Date & Time</label>
+                  <input disabled type="text" name="dep_date_time" placeholder="1/5 03:25"/>
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="dep_airport">Dep Airport</label>
+                  <input disabled type="text" name="dep_airport" placeholder="EWR"/>
+                </div>
+              </div>
+  
+              <div class="option-row">
+                <div class="option-input-group">
+                  <label for="arv_date_time">Arv Date & Time</label>
+                  <input disabled type="text" name="arv_date_time" placeholder="1/6 14:25"/>
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="arv_airport">ARV Airport</label>
+                  <input disabled type="text" name="dep_date_time" placeholder="LHR"/>
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="notes">Notes</label>
+                  <textarea type="text" name="notes"></textarea>
+                </div>
+              </div>
+  
+              <div class="option-footer">
+                <button class="option-btn">Add Leg</button>
+  
+                <label for="option_3_checkbox" class="toggle-btn">
+                  <input id="option_3_checkbox" type="checkbox" />
+                  <span class="toggle-btn-label"></span>
+                </label>
+              </div>
+            </div>
+  
+            <div class="add-option">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 448 512"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+  
+        <div class="segment-container disabled">
+          <div class="segment-header">
+            <div class="segment-heading">
+              <h3>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3 16h10l1-11h-12zM10 2v-2h-4v2h-5v3l1-1h12l1 1v-3h-5zM9 2h-2v-1h2v1z"
+                  ></path>
+                </svg>
+                <span>Segment 3</span>
+              </h3>
+  
+              <label for="segment_3_checkbox" class="toggle-btn">
+                <input id="segment_3_checkbox" type="checkbox" />
+                <span class="toggle-btn-label"></span>
+              </label>
+            </div>
+  
+            <div class="segment-date">EWR - LHR 07/03 - 09/08</div>
+          </div>
+  
+          <div class="segment">
+            <div class="option">
+              <h5>
+                <span>Option 1</span> <br />
+                <span>Leg 1</span>
+              </h5>
+  
+              <div class="option-row">
+                <div class="option-input-group">
+                  <label for="type">Type</label>
+                    <select id="type5">
+                        <option value="Miles" selected>Miles</option>
+                    </select>
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="class">Class</label>
+                  <select id="class5">
+                    <option value="J" selected>J</option>
+                  </select>
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="price">Price</label>
+                  <input type="text" name="price" value="$500" />
+                </div>
+              </div>
+  
+              <div class="option-row">
+                <div class="option-input-group">
+                  <label for="flight_no">Flight #</label>
+                  <input type="text" name="flight_no" value="AA100"/>
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="dep_date">Dep Date</label>
+                  <input type="text" name="dep_date" value="01/05/23"/>
+                </div>
+  
+                <button class="option-btn">Find</button>
+              </div>
+  
+              <div class="option-row">
+                <div class="option-input-group">
+                  <label for="airline">Airline</label>
+                  <input disabled type="text" name="airline" placeholder="AMERICAN" />
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="dep_date_time">Dep Date & Time</label>
+                  <input disabled type="text" name="dep_date_time" placeholder="1/5 03:25" />
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="dep_airport">Dep Airport</label>
+                  <input disabled type="text" name="dep_airport" placeholder="EWR" />
+                </div>
+              </div>
+  
+              <div class="option-row">
+                <div class="option-input-group">
+                  <label for="arv_date_time">Arv Date & Time</label>
+                  <input disabled type="text" name="arv_date_time" placeholder="1/6 14:25"/>
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="arv_airport">ARV Airport</label>
+                  <input disabled type="text" name="dep_date_time" placeholder="LHR" />
+                </div>
+  
+                <div class="option-input-group">
+                  <label for="notes">Notes</label>
+                  <textarea type="text" name="notes"></textarea>
+                </div>
+              </div>
+  
+              <div class="option-footer">
+                <button class="option-btn">Add Leg</button>
+  
+                <label for="option_4_checkbox" class="toggle-btn">
+                  <input id="option_4_checkbox" type="checkbox" />
+                  <span class="toggle-btn-label"></span>
+                </label>
+              </div>
+            </div>
+  
+            <div class="add-option">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 448 512"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+  
+        <div class="add-segment-container">
+          <h3>Add Segment</h3>
+          <div class="segment">
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 448 512"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+  
+      <div class="btn-container">
+          <button>Save Quote</button>
+          <button>Generate PDF Itinerary</button>
+          <button>Partially Confirm Quote</button>
+          <button>Confirm Quote</button>
+      </div>
+    </div>
+</template>

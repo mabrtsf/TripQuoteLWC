@@ -1,0 +1,304 @@
+body {
+    background-color: #f2f5f7;
+    font-family: "Roboto", serif;
+}
+
+.mainContainer{
+    background-color: #f2f5f7;
+}
+
+.triple-quote-heading {
+    text-transform: uppercase;
+    padding-top: 16px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.container {
+    background-color: #f2f5f7;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+/* Style for the toggle button */
+.toggle-btn {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.toggle-btn input {
+    display: none;
+}
+
+.toggle-btn-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-btn-label:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.toggle-btn input:checked+.toggle-btn-label {
+    background-color: #6558f5;
+}
+
+.toggle-btn input:checked+.toggle-btn-label:before {
+    transform: translateX(26px);
+}
+
+/* Style for the segment */
+.segment-container {
+    width: 100%;
+    max-width: 350px;
+}
+
+.segment-container:not(:last-child) {
+    margin-right: 16px;
+}
+
+.segment-container .segment-header {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.segment-container .segment-header .segment-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.segment-container .segment-header .segment-heading h3 {
+    margin: 0 14px 0 0;
+    font-size: 17px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.segment-container .segment-header .segment-heading h3 span {
+    margin-left: 8px;
+}
+
+.segment-container.disabled .segment-header .segment-heading h3 {
+    color: #727272;
+}
+
+.segment-container .segment-header .segment-date {
+    border: 1px solid #b7b7b7;
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 2px;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+.segment-container.disabled .segment-header .segment-date {
+    color: #bbbbbb;
+}
+
+.segment-container .segment {
+    background-color: #e3e8ed;
+    border: 2px solid #b8c5ce;
+    padding: 8px;
+    height: 688px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.segment-container .segment h5 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 12px 0;
+    font-weight: normal;
+}
+
+
+
+.segment-container .segment h5 span:last-child {
+    color: #727272;
+}
+
+.segment-container .segment .option {
+    background-color: #fff;
+    padding: 12px;
+    border: 1px solid #b8c5ce;
+    font-weight: 500;
+}
+
+.segment-container.disabled .segment .option {
+    background-color: transparent;
+    border: 2px solid #b8c5ce;
+}
+
+.segment-container .segment .option:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.segment-container .segment .option .option-row {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.segment-container .segment .option .option-divider {
+    margin-bottom: 8px;
+    padding-top: 10px;
+    border-top: 2px solid #c4c4c4;
+}
+
+.segment-container .segment .option .option-divider h3 {
+    color: #727272;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.segment-container .segment .option .option-divider svg {
+    position: absolute;
+    left: 0;
+}
+
+.segment-container .segment .option .option-row:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.segment-container .segment .option .option-row .option-input-group {
+    width: 33.33%;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.segment-container .segment .option .option-row .option-input-group:not(:last-child) {
+    width: calc(33.33% - 12px);
+    margin-right: 12px;
+}
+
+.segment-container .segment .option .option-row .option-input-group label {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #414141;
+    font-weight: 500;
+}
+
+.segment-container .segment .option .option-row .option-input-group input,
+.segment-container .segment .option .option-row .option-input-group textarea,
+.segment-container .segment .option .option-row .option-input-group select {
+    padding: 4px 8px;
+    outline: none;
+    border: 2px solid #d3d3d3;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+.segment-container .segment .option .option-btn {
+    background-color: #6558f5;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 4px 16px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.segment-container .segment .option .option-footer {
+    display: inline-flex;
+    align-items: center;
+}
+
+.segment-container .segment .option .option-footer .toggle-btn {
+    margin-left: 10px;
+}
+
+.segment-container .segment .add-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    border: 2px solid #b8c5ce;
+    background-color: #fff;
+    color: #727272;
+}
+
+.segment-container.disabled .segment .add-option {
+    background-color: transparent;
+}
+
+
+.add-segment-container .segment {
+    background-color: #E3E8ED;
+    border: 2px solid #b8c5ce;
+    padding: 8px;
+    height: 688px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.add-segment-container h3 {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    color: #8F9DA8;
+    white-space: nowrap;
+    margin-top: 36px;
+    margin-bottom: 8px;
+}
+
+.btn-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn-container button {
+    background-color: #6558f5;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 8px 16px;
+    text-transform: capitalize;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-container button:not(:last-child) {
+    margin-right: 20px;
+}
